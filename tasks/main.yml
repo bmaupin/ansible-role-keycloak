@@ -13,7 +13,9 @@
 - name: Install keycloak
   # Use dynamic include so skipped tasks won't show in output
   include_tasks: install.yml
-  when: keycloak_installed_version is undefined or keycloak_installed_version.stdout == ""
+  when: keycloak_installed_version is undefined or
+        keycloak_installed_version.stdout is undefined or
+        keycloak_installed_version.stdout == ""
   tags: [keycloak, keycloak-install]
 
 - name: Configure keycloak
