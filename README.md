@@ -35,6 +35,9 @@ Include the role and define any variables as described below
 - `keycloak_version` (optional)
     - Version of Keycloak to install
     - Default value: see [defaults/main.yml](defaults/main.yml)
+- `proxy_env` (optional)
+    - Proxy settings; see https://docs.ansible.com/ansible/latest/user_guide/playbooks_environment.html#setting-the-remote-environment
+    - Default value: `{}`
 
 
 ### Sample playbook
