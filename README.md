@@ -29,7 +29,7 @@ Include the role and define any variables as described below
 - `keycloak_home` (optional)
     - Default value: /opt/keycloak
 - `keycloak_java_version` (optional)
-    - Default value: 8
+    - Default value: see [defaults/main.yml](defaults/main.yml)
 - `keycloak_user` (optional)
     - Default value: keycloak
 - `keycloak_version` (optional)
