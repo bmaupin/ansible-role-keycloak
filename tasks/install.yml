@@ -8,7 +8,7 @@
 
 - name: Install OpenJDK Java {{ keycloak_java_version }} JDK
   yum:
-    name: java-1.{{ keycloak_java_version }}.0-openjdk-devel
+    name: java-{{ keycloak_java_version }}-openjdk-devel
     state: present
   become: yes
   when: ansible_os_family == "RedHat"
