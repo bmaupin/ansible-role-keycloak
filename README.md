@@ -14,7 +14,13 @@ Ansible role for Keycloak
 
 ### Instructions
 
-Include the role and define any variables as described below
+1. Create a playbook that includes this role and define any variables as described below
+
+1. After running the playbook, open the firewall as needed
+    - Port 8080 for HTTP
+    - Port 8443 for HTTPS
+
+1. Navigate to the server, e.g. https://192.168.56.100:8443
 
 
 ### Variables
