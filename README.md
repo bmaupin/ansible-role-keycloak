@@ -22,6 +22,8 @@ Ansible role for Keycloak
 
 1. Navigate to the server, e.g. https://192.168.56.100:8443
 
+1. Go to the *Administration Console* and log in using the admin username and password you set (see *Variables* below)
+
 
 ### Variables
 
@@ -29,15 +31,15 @@ Ansible role for Keycloak
     - Password for the admin user
 - `keycloak_admin_username` (optional)
     - Username for the admin user
-    - Default value: 'admin'
+    - Default value: `admin`
 - `keycloak_group` (optional)
-    - Default value: keycloak
+    - Default value: `keycloak`
 - `keycloak_home` (optional)
-    - Default value: /opt/keycloak
+    - Default value: `/opt/keycloak`
 - `keycloak_java_version` (optional)
     - Default value: see [defaults/main.yml](defaults/main.yml)
 - `keycloak_user` (optional)
-    - Default value: keycloak
+    - Default value: `keycloak`
 - `keycloak_version` (optional)
     - Version of Keycloak to install
     - Default value: see [defaults/main.yml](defaults/main.yml)
