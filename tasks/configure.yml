@@ -37,8 +37,9 @@
   notify:
     - Reload systemd
 
-- name: Enable keycloak service
+- name: Enable and start keycloak service
   service:
     name: keycloak
     enabled: yes
+    state: started
   become: yes
