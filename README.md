@@ -55,3 +55,8 @@ Ansible role for Keycloak
         - keycloak
       vars:
         keycloak_admin_password: "{{ vault_keycloak_admin_password }}"
+
+
+### Documentation
+
+See [docs](docs) for various post-install documentation
